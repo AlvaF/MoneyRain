@@ -33,10 +33,13 @@ main {
   -ms-grid-column-span: 1;
   grid-column: 2/ span 1;
   z-index: 2;
+  background: url(../Assets/bgWelcome.svg) no-repeat 93% 7%;
+  background-size: 50% auto;
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1150px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -47,15 +50,14 @@ header {
 }
 
 header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 1fr 45%;
+      grid-template-columns: 10% 1fr 45%;
+}
+
+header .container .logo {
+  padding: 10% 0;
 }
 
 header .container ul {
@@ -66,6 +68,9 @@ header .container ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / span 1;
 }
 
 header .container ul li {
@@ -85,10 +90,6 @@ header .container ul li:not(:first-child) {
 header .container ul li a {
   color: #000000;
   text-decoration: none;
-}
-
-.info {
-  background: url(../Assets/bgWelcome.svg) no-repeat 93% 0%;
 }
 
 .info .container h4 {
@@ -149,6 +150,7 @@ header .container ul li a {
 }
 
 .games {
+  margin-top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,14 +174,15 @@ header .container ul li a {
 
 .games .extensions {
   margin-top: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2.5%;
 }
 
 .games .extensions__card {
   padding-bottom: 3%;
-  max-width: 33%;
   -webkit-box-shadow: 0px 10px 10px 8px #EEEEEE;
           box-shadow: 0px 10px 10px 8px #EEEEEE;
   border-radius: 15px;
@@ -190,10 +193,6 @@ header .container ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.games .extensions__card:not(:first-child) {
-  margin-left: 2.5%;
 }
 
 .games .extensions__card h4 {
@@ -208,6 +207,7 @@ header .container ul li a {
 }
 
 .games .extensions__card p {
+  min-height: 18%;
   margin-top: 5%;
   font-family: 'Montserrat';
   font-style: normal;
