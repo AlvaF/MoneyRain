@@ -267,6 +267,10 @@ header .container ul li a {
   color: #3A4149;
 }
 
+.video .video2 {
+  display: none;
+}
+
 .design {
   background: url(../Assets/haveAQuastion.svg) no-repeat 2% 48%;
   padding-bottom: 12.5%;

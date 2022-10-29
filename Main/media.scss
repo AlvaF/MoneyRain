@@ -31,7 +31,7 @@
     }
 
     main {
-        background: url(../Assets/bgWelcomeCatMobile.svg) no-repeat 101% 2%, url(../Assets/bgPointsMobile.svg) no-repeat;
+        background: url(../Assets/bgWelcomeCatMobile.svg) no-repeat 101% 2%, url(../Assets/bgPointsMobile.svg) repeat-y;
         // background-size: 100% auto
     }
 
@@ -132,6 +132,58 @@
 
         .video1 {
             display: none;
+        }
+    }
+
+    .design {
+        background: url(../Assets/bgQuestionMobile.svg) no-repeat 0% 66%;
+
+        .question {
+            &__text {
+                h3 {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 115.59%;
+                }
+
+                a {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+
+                button {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 164.09%;
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer {
+            p {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 115.59%;
+            }
+
+            .privacy {
+                li {
+                    a {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 115.59%;
+                    }
+                }
+            }
         }
     }
 }
