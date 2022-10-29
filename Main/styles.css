@@ -60,6 +60,10 @@ header .container .logo {
   padding: 10% 0;
 }
 
+header .container .burger {
+  display: none;
+}
+
 header .container ul {
   list-style: none;
   display: -webkit-box;
@@ -172,8 +176,11 @@ header .container ul li a {
   color: #3A4149;
 }
 
-.games .extensions {
+.games .content {
   margin-top: 5%;
+}
+
+.games .extensions {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];

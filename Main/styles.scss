@@ -50,6 +50,10 @@ header {
             padding: 10% 0;
         }
 
+        .burger {
+            display: none;
+        }
+
         ul {
             list-style: none;
             display: flex;
@@ -155,8 +159,11 @@ header {
         color: #3A4149;
     }
 
-    .extensions {
+    .content {
         margin-top: 5%;
+    }
+
+    .extensions {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 2.5%;

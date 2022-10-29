@@ -1,7 +1,120 @@
-@media (max-width: 360px) {
+@media (max-width: 361px) {
   .container {
-    max-width: 329px;
+    max-width: 330px;
     padding: 0;
+  }
+  header {
+    width: 100%;
+  }
+  header .container {
+    -ms-grid-columns: 10% 1fr 10%;
+        grid-template-columns: 10% 1fr 10%;
+  }
+  header .container ul {
+    display: none;
+  }
+  header .container .burger {
+    display: block;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / span 1;
+    padding: 10% 0;
+  }
+  .bg1 {
+    display: none;
+  }
+  .bg2 {
+    display: none;
+  }
+  main {
+    background: url(../Assets/bgWelcomeCatMobile.svg) no-repeat 101% 2%, url(../Assets/bgPointsMobile.svg) no-repeat;
+  }
+  .info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 1fr;
+        grid-template-columns: 60% 1fr;
+  }
+  .info .container {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 /span 1;
+  }
+  .info .container h4 {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .info .container h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 115.59%;
+  }
+  .info .container p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .info .container button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 164.09%;
+    padding: 2% 5%;
+  }
+  .info ul {
+    display: none;
+  }
+  .games h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 115.59%;
+  }
+  .games .content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10% 1fr 10%;
+        grid-template-columns: 10% 1fr 10%;
+  }
+  .games .extensions {
+    margin-top: 5%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 3%;
+  }
+  .games .extensions__card {
+    background-color: #FFFFFF;
+    width: 283px;
+    padding-bottom: 5%;
+  }
+  .games .extensions__card h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 115.59%;
+  }
+  .games .extensions__card p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 115.59%;
+  }
+  .games .extensions__card button {
+    margin-top: 3%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 164.09%;
+  }
+  .video {
+    margin-top: 20%;
+  }
+  .video h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 115.59%;
+  }
+  .video .video1 {
+    display: none;
   }
 }
 /*# sourceMappingURL=media.css.map */
